@@ -25,6 +25,10 @@ h2 {
   color: #8C6238;
 }
 
+a {
+  text-decoration: none;
+}
+
 .top-section {
   padding: 20px;
   margin-top: 0;
