@@ -13,8 +13,8 @@ function getDogImage(dog) {
 
 const getRandomDog = () => { 
   fetch(`https://dog.ceo/api/breeds/image/random`)
-  .then(response => response.json())
-  .then(data =>loadDogImage(data.message));
+    .then(response => response.json())
+    .then(data => loadDogImage(data.message));
 }
 
 function selectDog() {
@@ -33,12 +33,15 @@ function selectDog() {
 
 function loadDogImage(image){
  const img = document.createElement('img');
-      img.setAttribute('src', image);
-      img.setAttribute('id', 'hello')
-      img.setAttribute('class', 'dog-image')
-      const dogImage = document.querySelector('.dog-image')
-      dogImage.innerHTML='';
-      dogImage.appendChild(img);
+  img.setAttribute('src', image);
+  img.setAttribute('id', image)
+  const breedsNameString = image.slice((image.indexOf(`s/`) + 2), (image.indexOf(`/n`)));
+  img.setAttribute('class', 'dog-image')
+  const dogImage = document.querySelector('.dog-image')
+  dogImage.innerHTML='';
+  dogImage.appendChild(img);
+  const dogName = document.querySelector('.breed-name');
+  dogName.textContent = breedsNameString.charAt(0).toUpperCase() + breedsNameString.slice(1);
 }
 
 dogMenu.addEventListener('change', (event) => {
@@ -49,6 +52,7 @@ dogMenu.addEventListener('change', (event) => {
 form.addEventListener('submit',(event)=>{
   event.preventDefault();
   console.log(dogMenu.value);
+  
   dogMenu.selectedIndex = 0;
   getRandomDog()
 })

@@ -3,7 +3,8 @@
 }
 
 body {
-  background-color: #C1CFDA;
+  background-image: url(images/dog-background-wallpaper-design.jpg);
+  background-size: contain;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -13,7 +14,7 @@ h1 {
   font-family: 'Underdog', cursive;
   font-size: 60px;
   margin-bottom: 0;
-  color: #094D5D;
+  color: #8C6238;
 }
 h2 {
   text-align: center;
@@ -21,12 +22,20 @@ h2 {
   margin-top: 0;
   font-family: 'Underdog', cursive;
   font-size: 30px;
-  color: #094D5D;
+  color: #8C6238;
+}
+
+.top-section {
+  padding: 20px;
+  margin-top: 0;
+  background-color: #C4DEF9;
 }
 
 .container {
-  border: solid 15px #094D5D;
-  background-color: #A6BAC9;
+  margin-top: 0;
+  border-radius: 17px;
+  border: solid 15px #8C6238;
+  /* background-color: #A6BAC9; */
   max-width: 600px;
   margin: 0 auto;
 }
@@ -41,7 +50,7 @@ h2 {
 }
 
 .dropbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
+  background-color: #8C6238;
 }
 
 .dropdown {
@@ -74,8 +83,9 @@ h2 {
 }
 
 .form {
+  border-radius: 17px;
   margin: 20px;
-  border: solid 5px #094D5D;
+  border: solid 5px #8C6238;
   background-color: #DE9E36;
   text-align: center;
   padding: 15px;
@@ -100,19 +110,19 @@ h2 {
 }
 
 .breed-btn {
-  box-shadow:inset 0px 0px 15px 3px #23395e;
-	background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
-	background-color:#2e466e;
+  box-shadow:inset 0px 0px 15px 3px #ADFFAD;
+	background:linear-gradient(to bottom, #ADFFAD 5%, #419b41 100%);
+	background-color:#419b41;
 	border-radius:17px;
-	border:1px solid #1f2f47;
+	border:1px solid #419b41;
 	display:inline-block;
 	cursor:pointer;
-	color:#ffffff;
+	color:#5a3f24;
 	font-family: 'Underdog', cursive;
 	font-size:1rem;
 	padding:6px 13px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #263666;
+	text-shadow:0px 1px 0px #419b41;
 }
 
 .breed-btn:hover {
@@ -124,21 +134,20 @@ h2 {
   outline: none;
 }
 
-
 .lucky-btn {
-  box-shadow:inset 0px 0px 15px 3px #23395e;
-	background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
-	background-color:#2e466e;
+  box-shadow:inset 0px 0px 15px 3px #ADFFAD;
+	background:linear-gradient(to bottom, #ADFFAD 5%, #419b41 100%);
+	background-color:#419b41;
 	border-radius:17px;
-	border:1px solid #1f2f47;
+	border:1px solid #419b41;
 	display:inline-block;
 	cursor:pointer;
-	color:#ffffff;
+	color:#5a3f24;
 	font-family: 'Underdog', cursive;
 	font-size:1rem;
 	padding:6px 13px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #263666;
+	text-shadow:0px 1px 0px #419b41;
 }
 
 .lucky-btn:hover {
@@ -169,12 +178,12 @@ h2 {
 }
 
 .dog-image {
-  padding: 5px;
+  padding: 2px;
   justify-content: center;
   display: flex;
   max-height: 400px;
   object-fit: contain;
-  background-color: #094D5D;
+  background-color: #C7B198;
 }
 
 button:focus {
@@ -187,6 +196,7 @@ button:focus {
 }
 
 .info-section {
+  background-color: #C1CFDA;
   display: flex;
   flex-direction: column;
 }
