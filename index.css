@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #C1CFDA;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-left: 10px;
+  font-family: 'Underdog', cursive;
+  font-size: 60px;
+  margin-bottom: 0;
+  color: #094D5D;
+}
+h2 {
+  text-align: center;
+  margin-left: 15px;
+  margin-top: 0;
+  font-family: 'Underdog', cursive;
+  font-size: 30px;
+  color: #094D5D;
+}
+
+.container {
+  border: solid 15px #094D5D;
+  background-color: #A6BAC9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.dropbtn {
+  background-color: #C1CFDA;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd
+}
+
+.show {
+  display:block;
+}
+
+.form {
+  margin: 20px;
+  border: solid 5px #094D5D;
+  background-color: #DE9E36;
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.breed {
+  justify-self: center;
+  margin: 5px;
+  width: 130px;
+  display: flex;
+}
+
+.lucky {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  text-align: center;
+  justify-content: center;
+}
+
+.breed-btn {
+  box-shadow:inset 0px 0px 15px 3px #23395e;
+	background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+	background-color:#2e466e;
+	border-radius:17px;
+	border:1px solid #1f2f47;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Underdog', cursive;
+	font-size:1rem;
+	padding:6px 13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+}
+
+.breed-btn:hover {
+  background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+
+.breed-btn:active {
+  outline: none;
+}
+
+
+.lucky-btn {
+  box-shadow:inset 0px 0px 15px 3px #23395e;
+	background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+	background-color:#2e466e;
+	border-radius:17px;
+	border:1px solid #1f2f47;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Underdog', cursive;
+	font-size:1rem;
+	padding:6px 13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+}
+
+.lucky-btn:hover {
+  background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+
+.dropdown {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+}
+
+#dog-menu {
+
+  text-align: center;
+  border-radius: 17px;
+  display: flex;
+  align-self: center;
+  padding: 0;
+  margin: 5px;
+  width: 150px;
+  height: 30px;
+}
+
+#dog-menu:focus {
+  outline: none;
+}
+
+.dog-image {
+  padding: 5px;
+  justify-content: center;
+  display: flex;
+  max-height: 400px;
+  object-fit: contain;
+  background-color: #094D5D;
+}
+
+button:focus {
+  outline: none;
+}
+
+.puppy-pic {
+  max-width: 400px;
+  height: auto;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.breed-name {
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.breed-info {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+
+}
+
+
+
+
